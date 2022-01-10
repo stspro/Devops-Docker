@@ -1,4 +1,5 @@
-From image=java:latest
+Arg java_version
+From image=image_url
 
 curl https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-debugimage_aarch64_linux_hotspot_11.0.13_8.tar.gz
 tar -xvf OpenJDK11U-debugimage_aarch64_linux_hotspot_11.0.13_8.tar.gz
