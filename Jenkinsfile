@@ -17,23 +17,22 @@ node {
         bat  'might fail'
     }
     
-    stage('write') {
-           steps {
-               script {
+    stage('writefile') {
+          
+              
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file: 'hello.txt', text: data)
-                   bat 'dir'
-               }
-           }
-       }
-       stage('read') {
-           steps {
-               script {
+                   
+               
+                  }
+       stage('readfile') {
+           
+             
                    def data = readFile(file: 'hello.txt')
                    println(data)
-               }
-           }
+               
+           
        }
     
   
