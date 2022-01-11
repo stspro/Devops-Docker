@@ -16,6 +16,7 @@ node {
     catchError {
         bat  'might fail'
     }
+    readfile C:\DevOps\java_workspace\jenkins2
     
      step([$class: 'Mailer', recipients: 'laxmishrini@hotmail.com'])
     
