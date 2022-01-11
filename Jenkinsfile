@@ -34,8 +34,8 @@ node {
        stage('readfile') {           
              
                    def data = readFile(file: 'hello.txt')
-                   Println(data)
-                   Println(currentBuild.getPreviousBuild().result)       
+                   println(data)
+                   println(currentBuild.getPreviousBuild().result)       
                           
        }
         
