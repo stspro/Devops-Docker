@@ -1,5 +1,5 @@
 
-FROM ubuntu:16.04
+FROM registry.access.redhat.com/ubi8/ubi:latest
 
 RUN apt-get update && \
 
