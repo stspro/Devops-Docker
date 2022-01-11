@@ -28,6 +28,7 @@ node {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file: /temp/'hello.txt', text: data)
+                   bat dir
                    
                
                   }
