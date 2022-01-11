@@ -16,9 +16,12 @@ node {
     catchError {
         bat  'might fail'
     }
+    
+    echo $readfile C:/DevOps/java_workspace/jenkins2/
+        bat "sleep :2"
    
     
-     step([$class: 'Mailer', recipients: 'laxmishrini@hotmail.com'])
+     step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
     
  // bat 'git rev-parse HEAD > GIT_COMMIT'
    //def shortCommit = readFile('GIT_COMMIT').take(6)
