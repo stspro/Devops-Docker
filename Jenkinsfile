@@ -11,7 +11,7 @@ node {
    echo 'checkout'
 
    git url: "https://github.com/stspro/jenkins2.git"
-   pwd
+   
     bat "dir *.*/s"
     
      step([$class: 'Mailer', recipients: 'admin@somewhere'])
