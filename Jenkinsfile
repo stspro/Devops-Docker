@@ -33,6 +33,8 @@ node {
                    def data = readFile(file: 'hello.txt')
                    println(data)
                }
+           }
+       }
     
   
     
