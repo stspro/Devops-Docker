@@ -14,7 +14,7 @@ node {
    
     bat "dir *.*/s"
     catchError {
-        sh 'might fail'
+        bat  'might fail'
     }
     
      step([$class: 'Mailer', recipients: 'admin@somewhere'])
