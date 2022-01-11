@@ -27,7 +27,7 @@ node {
               
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
-                   writeFile(file: 'hello.txt', text: data)
+                   writeFile(file: /temp/'hello.txt', text: data)
                    
                
                   }
