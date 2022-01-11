@@ -17,6 +17,11 @@ node {
         bat  'might fail'
     }
     
+    stage ("wait_before_writingfile") {
+  echo 'Waiting for 3 seconds '
+  sleep 3 // seconds
+}
+    
     stage('writefile') {
           
               
@@ -36,8 +41,8 @@ node {
         
      //step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
     
- // bat 'git rev-parse HEAD > GIT_COMMIT'
-   //def shortCommit = readFile('GIT_COMMIT').take(6)
+     // bat 'git rev-parse HEAD > GIT_COMMIT'
+     //def shortCommit = readFile('GIT_COMMIT').take(6)
 
    stage '2'
    echo 'branch'
