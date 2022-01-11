@@ -26,17 +26,14 @@ node {
                    
                
                   }
-       stage('readfile') {
-           
+       stage('readfile') {           
              
                    def data = readFile(file: 'hello.txt')
                    println(data)
-               
-           
+           println(currentBuild.getPreviousBuild().result       
+                          
        }
-    println(currentBuild.getPreviousBuild().result)
-  
-    
+        
      //step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
     
  // bat 'git rev-parse HEAD > GIT_COMMIT'
