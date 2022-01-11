@@ -34,7 +34,7 @@ node {
                
            
        }
-    
+    println(currentBuild.getPreviousBuild().result)
   
     
      //step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
