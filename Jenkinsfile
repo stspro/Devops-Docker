@@ -17,7 +17,7 @@ node {
         bat  'might fail'
     }
     
-     step([$class: 'Mailer', recipients: 'admin@somewhere'])
+     step([$class: 'Mailer', recipients: 'laxmishrini@hotmail.com'])
     
  // bat 'git rev-parse HEAD > GIT_COMMIT'
    //def shortCommit = readFile('GIT_COMMIT').take(6)
