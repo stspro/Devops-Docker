@@ -13,6 +13,9 @@ node {
    git url: "https://github.com/stspro/jenkins2.git"
    
     bat "dir *.*/s"
+    catchError {
+        sh 'might fail'
+    }
     
      step([$class: 'Mailer', recipients: 'admin@somewhere'])
     
