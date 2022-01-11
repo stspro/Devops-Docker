@@ -17,11 +17,26 @@ node {
         bat  'might fail'
     }
     
-    echo $readfile C:/DevOps/java_workspace/jenkins2/
-        bat "sleep :2"
-   
+    stage('write') {
+           steps {
+               script {
+                   def date = new Date()
+                   def data = "Hello World\nSecond line\n" + date
+                   writeFile(file: 'hello.txt', text: data)
+                   bat 'dir'
+               }
+           }
+       }
+       stage('read') {
+           steps {
+               script {
+                   def data = readFile(file: 'hello.txt')
+                   println(data)
+               }
     
-     step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
+  
+    
+     //step([$class: 'Mailer', recipients: 'adminsomewhere@abc.com'])
     
  // bat 'git rev-parse HEAD > GIT_COMMIT'
    //def shortCommit = readFile('GIT_COMMIT').take(6)
