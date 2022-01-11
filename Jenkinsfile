@@ -1,9 +1,9 @@
-import hudson.model.*
-import hudson.EnvVars
-import groovy.json.JsonSlurperClassic
-import groovy.json.JsonBuilder
-import groovy.json.JsonOutput
-import java.net.URL
+//import hudson.model.*
+//import hudson.EnvVars
+//import groovy.json.JsonSlurperClassic
+//import groovy.json.JsonBuilder
+//import groovy.json.JsonOutput
+//import java.net.URL
 
 node {
     
@@ -30,7 +30,7 @@ node {
              
                    def data = readFile(file: 'hello.txt')
                    println(data)
-           println(currentBuild.getPreviousBuild().result       
+           println(currentBuild.getPreviousBuild().result)       
                           
        }
         
