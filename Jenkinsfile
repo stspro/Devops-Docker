@@ -28,15 +28,14 @@ node {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file:'hello.txt', text: data)
-                   bat dir
-                   
-               
-                  }
+                               
+                   }
+    
        stage('readfile') {           
              
                    def data = readFile(file: 'hello.txt')
-                   println(data)
-           println(currentBuild.getPreviousBuild().result)       
+                   Println(data)
+                   Println(currentBuild.getPreviousBuild().result)       
                           
        }
         
