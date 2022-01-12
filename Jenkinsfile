@@ -46,4 +46,5 @@ node {
 
    stage '2'
    echo 'branch'
+    git push
 }
