@@ -28,7 +28,7 @@ node {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file:'hello.txt', text: data)
-                               
+                    bat "dir"            
                    }
     
        stage('readfile') {           
