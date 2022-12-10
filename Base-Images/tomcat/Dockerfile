@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat:latest
 
 RUN curl -O https://downloads.apache.org/tomcat/tomcat-8/v8.5.73/bin/apache-tomcat-8.5.73-deployer.tar.gz
 RUN tar xvfz apache*.tar.gz
