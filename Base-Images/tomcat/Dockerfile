@@ -6,6 +6,6 @@ RUN mv apache-tomcat-8.5.40/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 
-EXPOSE 8080
+#EXPOSE 8080
 
-CMD [“catalina.sh”, “run”]
+#CMD [“catalina.sh”, “run”]
