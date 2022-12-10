@@ -1,5 +1,7 @@
+
 FROM scratch
-#FROM openjdk:latest
+
+# FROM openjdk:latest
 
 RUN curl https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-debugimage_aarch64_linux_hotspot_11.0.13_8.tar.gz
 
